@@ -1,0 +1,7 @@
+:root {
+  --title-color-text: #212121;
+  --primery-color-text: #757575;
+  --color-prime: #000000;
+  --color-hover: #2196f3;
+  --color-hover-btn: #188ce8;
+}
