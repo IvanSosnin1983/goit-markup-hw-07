@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <!-- подключение  modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- подключение шрифтов -->
@@ -19,7 +27,7 @@
     <header class="header">
       <div class="container">
         <nav class="header-nav">
-          <a href="./index.html" class="header-logo link"
+          <a href="./index.html" class="logo logo__header link"
             ><span class="header-web">Web</span>Studio</a
           >
           <ul class="list header-list">
@@ -63,11 +71,19 @@
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="list filter-list">
-            <li class="filter-item"><button type="button" class="btn">Все</button></li>
-            <li class="filter-item"><button type="button" class="btn">Веб-сайты</button></li>
-            <li class="filter-item"><button type="button" class="btn">Приложения</button></li>
-            <li class="filter-item"><button type="button" class="btn">Дизайн</button></li>
-            <li class="filter-item"><button type="button" class="btn">Маркетинг</button></li>
+            <li class="filter-item"><button type="button" class="button__gallery">Все</button></li>
+            <li class="filter-item">
+              <button type="button" class="button__gallery">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button__gallery">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button__gallery">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button__gallery">Маркетинг</button>
+            </li>
           </ul>
           <ul class="list gallery-list">
             <li class="gallery-item">
@@ -221,7 +237,7 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <a href="./index.html" class="footer-logo link"
+          <a href="./index.html" class="logo logo__footer link"
             ><span class="header-web">Web</span>Studio</a
           >
           <address class="footer-address">
@@ -291,7 +307,7 @@
                 placeholder="E-mail"
               />
 
-              <button type="submit" class="button btn-subscribe">
+              <button type="submit" class="button button__subscribe">
                 Подписаться
                 <svg class="icon-send" width="24" height="24">
                   <use href="./imeges/icons.svg#icon-send"></use>
