@@ -1,13 +1,17 @@
 .footer {
-  /* display: flex; */
-  /* flex-direction: row; */
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
+}
+
+.footer__logo {
+  display: block;
+  color: var(--color-white);
+  margin-bottom: 20px;
 }
 
 .footer-address-wrap {
@@ -38,12 +42,7 @@
   margin-left: 70px;
   margin-right: 93px;
 }
-.footer-social .secondary-title {
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
+
 .footer-social-list {
   display: flex;
 }

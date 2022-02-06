@@ -25,37 +25,37 @@
     />
   </head>
   <body>
-    <!--Верхняя линия-->
+    <!--HEADER-->
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="header-nav">
-          <a href="./index.html" class="logo logo__header link"
-            ><span class="header-web">Web</span>Studio</a
+          <a href="./index.html" class="logo header__logo link"
+            ><span class="logo-web">Web</span>Studio</a
           >
-          <ul class="list header-list">
-            <li class="header-item">
-              <a href="./index.html" class="link header-link current">Студия</a>
+          <ul class="list header-nav__list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="link header-nav__link current">Студия</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="link header-link">Портфолио</a>
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="link header-nav__link">Портфолио</a>
             </li>
-            <li class="header-item">
-              <a href="" class="link header-link">Контакты</a>
+            <li class="header-nav__item">
+              <a href="" class="link header-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
         <!-- <div class="header-contact-list"> -->
-        <ul class="header-list list header-contact-list">
-          <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="link header-contact">
+        <ul class="list header-contact__list">
+          <li class="header-contact__item">
+            <a href="mailto:info@devstudio.com" class="link header-contact__link">
               <svg class="tel-svg" width="16" height="12">
                 <use href="./imeges/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
-            <a href="tel:+380961111111" class="link header-contact">
+          <li class="header-contact__item">
+            <a href="tel:+380961111111" class="link header-contact__link">
               <svg class="tel-svg" width="10" height="16">
                 <use href="./imeges/icons.svg#icon-smartphone"></use>
               </svg>
@@ -70,7 +70,7 @@
       <!--Герой-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
@@ -78,7 +78,7 @@
       <!--Принципы работы-->
       <section class="work-principles">
         <div class="container">
-          <h2 class="section-title visually-hidden">Принципы работы</h2>
+          <h2 class="section__title visually-hidden">Принципы работы</h2>
           <ul class="list">
             <li class="principles-item">
               <div class="principles-icon-box">
@@ -86,7 +86,7 @@
                   <use href="./imeges/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Внимание к деталям</h3>
+              <h3 class="secondary__title">Внимание к деталям</h3>
               <p class="section-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
@@ -97,7 +97,7 @@
                   <use href="./imeges/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Пунктуальность</h3>
+              <h3 class="secondary__title">Пунктуальность</h3>
               <p class="section-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
@@ -108,7 +108,7 @@
                   <use href="./imeges/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Планирование</h3>
+              <h3 class="secondary__title">Планирование</h3>
               <p class="section-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
@@ -119,7 +119,7 @@
                   <use href="./imeges/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Современные технологии</h3>
+              <h3 class="secondary__title">Современные технологии</h3>
               <p class="section-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
@@ -130,7 +130,7 @@
       <!--Чем мы занимаемся-->
       <section class="activity">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="activity-item">
               <div class="activity-wrap">
@@ -156,7 +156,7 @@
       <!--Наша команда-->
       <section class="team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
               <img
@@ -166,7 +166,7 @@
                 width="270"
               />
               <div class="team-text">
-                <h3 class="secondary-title">Игорь Демьяненко</h3>
+                <h3 class="secondary__title">Игорь Демьяненко</h3>
                 <p class="section-text">Product Designer</p>
                 <ul class="list social-list">
                   <li class="social-item">
@@ -204,7 +204,7 @@
             <li class="team-item">
               <img src="./imeges/img_olga.jpg" alt="Ольга Репина" class="team-img" width="270" />
               <div class="team-text">
-                <h3 class="secondary-title">Ольга Репина</h3>
+                <h3 class="secondary__title">Ольга Репина</h3>
                 <p class="section-text">Frontend Developer</p>
                 <ul class="list social-list">
                   <li class="social-item">
@@ -249,7 +249,7 @@
                 width="270"
               />
               <div class="team-text">
-                <h3 class="secondary-title">Николай Тарасов</h3>
+                <h3 class="secondary__title">Николай Тарасов</h3>
                 <p class="section-text">Marketing</p>
                 <ul class="list social-list">
                   <li class="social-item">
@@ -294,7 +294,7 @@
                 width="270"
               />
               <div class="team-text">
-                <h3 class="secondary-title">Михаил Ермаков</h3>
+                <h3 class="secondary__title">Михаил Ермаков</h3>
                 <p class="section-text">UI Designer</p>
                 <ul class="list social-list">
                   <li class="social-item">
@@ -339,7 +339,7 @@
 
       <section class="clients">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients-list list">
             <li class="clients-item">
               <a href="" class="link clients-link">
@@ -390,10 +390,10 @@
 
     <!--Футер-->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="footer-address-wrap">
-          <a href="./index.html" class="logo logo__footer link"
-            ><span class="header-web">Web</span>Studio</a
+          <a href="./index.html" class="logo footer__logo link"
+            ><span class="logo-web">Web</span>Studio</a
           >
           <address class="footer-address">
             <ul class="list">
@@ -416,7 +416,7 @@
           </address>
         </div>
         <div class="footer-social">
-          <h3 class="secondary-title">присоединяйтесь</h3>
+          <h3 class="footer__title">присоединяйтесь</h3>
           <ul class="list footer-social-list">
             <li class="footer-social-item">
               <a href="" class="footer-social-link link">
@@ -473,6 +473,8 @@
         </form>
       </div>
     </footer>
+
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button__modal--close" data-modal-close>
