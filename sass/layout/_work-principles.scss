@@ -1,10 +1,11 @@
 .work-principles {
   padding-top: 94px;
-}
-.work-principles .secondary-title {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+
+  .secondary__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 }
 
 .principles-icon-box {
@@ -13,18 +14,16 @@
   justify-content: center;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--sections-background);
   margin-bottom: 30px;
 }
 
-.work-principles .list {
+.work-principles__list {
   display: flex;
   margin-right: -30px;
 }
-.activity .section-title {
-  margin-bottom: 50px;
-}
-.principles-item {
+
+.work-principles__item {
   width: 270px;
   margin-right: 30px;
 }

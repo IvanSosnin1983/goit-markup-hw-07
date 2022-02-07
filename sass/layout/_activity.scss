@@ -1,11 +1,14 @@
 .activity {
   padding-top: 94px;
   padding-bottom: 94px;
+  .list {
+    display: flex;
+  }
 }
-.activity-wrap {
+.activity__wrap {
   position: relative;
 }
-.activity-wrap-text {
+.activity__wrap-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +27,7 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.activity .list {
-  display: flex;
-}
-.activity-item:not(:last-child) {
+
+.activity__item:not(:last-child) {
   margin-right: 30px;
 }

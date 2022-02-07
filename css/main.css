@@ -46,6 +46,7 @@ img {
   --color-prime: #000000;
   --color-hover: #2196f3;
   --color-hover-btn: #188ce8;
+  --sections-background: #f5f4fa;
 }
 
 .container {
@@ -312,7 +313,7 @@ img {
   padding-top: 94px;
 }
 
-.work-principles .secondary-title {
+.work-principles .secondary__title {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -324,20 +325,16 @@ img {
   justify-content: center;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--sections-background);
   margin-bottom: 30px;
 }
 
-.work-principles .list {
+.work-principles__list {
   display: flex;
   margin-right: -30px;
 }
 
-.activity .section-title {
-  margin-bottom: 50px;
-}
-
-.principles-item {
+.work-principles__item {
   width: 270px;
   margin-right: 30px;
 }
@@ -347,11 +344,15 @@ img {
   padding-bottom: 94px;
 }
 
-.activity-wrap {
+.activity .list {
+  display: flex;
+}
+
+.activity__wrap {
   position: relative;
 }
 
-.activity-wrap-text {
+.activity__wrap-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,11 +372,7 @@ img {
   color: #ffffff;
 }
 
-.activity .list {
-  display: flex;
-}
-
-.activity-item:not(:last-child) {
+.activity__item:not(:last-child) {
   margin-right: 30px;
 }
 
