@@ -382,45 +382,42 @@ img {
   padding-bottom: 94px;
 }
 
-.team .section-title {
+.team .section__title {
   margin-bottom: 50px;
 }
 
-.team-list {
-  display: flex;
-  margin-right: -30px;
-}
-
-.team-item {
-  margin-right: 30px;
-  background-color: #fff;
-  /* padding-bottom: 30px; */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-text {
-  padding: 30px 20px 30px 20px;
-  text-align: center;
-}
-
-.team .secondary-title {
+.team .secondary__title {
   margin-bottom: 10px;
 }
 
 .team .section-text {
   margin-bottom: 16px;
-  /* text-align: center; */
-  /* margin-bottom: 30px; */
 }
 
-.social-list {
+.team__list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.team__item {
+  margin-right: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__box {
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+}
+
+.socials {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -432,12 +429,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-social {
-  fill: currentColor;
-}
-
-.social-link:hover,
-.social-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--color-hover);
   width: 44px;
   height: 44px;
@@ -446,13 +438,17 @@ img {
   color: #ffffff;
 }
 
-.social-item {
+.svg-social {
+  fill: currentColor;
+}
+
+.socials__item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-item + .social-item {
+.socials__item + .socials__item {
   margin-left: 10px;
 }
 
@@ -461,7 +457,7 @@ img {
   padding-bottom: 94px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
 
@@ -477,17 +473,17 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-link:hover {
+  color: var(--color-hover);
+  border: 1px solid #2196f3;
+}
+
 .clients-icon {
   fill: currentColor;
 }
 
-.clients-item + .clients-item {
+.clients__item + .clients__item {
   margin-left: 30px;
-}
-
-.clients-link:hover {
-  color: var(--color-hover);
-  border: 1px solid #2196f3;
 }
 
 .footer {
@@ -507,11 +503,11 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-address-wrap {
+.footer__address-wrap {
   min-width: 231px;
 }
 
-.footer-address {
+.footer__address-link {
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -521,11 +517,12 @@ img {
   /* margin-bottom: 9px; */
 }
 
-.footer-item:not(:last-child) {
+.footer__address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-contact {
+.footer__contact-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -533,16 +530,16 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social {
+.footer__social-wrap {
   margin-left: 70px;
   margin-right: 93px;
 }
 
-.footer-social-list {
+.footer__social-list {
   display: flex;
 }
 
-.footer-social-link {
+.footer__social-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -554,13 +551,12 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
+.footer__social-link:hover, .footer__social-link:focus {
+  background-color: var(--color-hover);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--color-hover);
+.footer__social-item + .footer__social-item {
+  margin-left: 10px;
 }
 
 .footer-svg {
@@ -586,7 +582,7 @@ img {
   color: #ffffff;
 }
 
-.subscribe-input {
+.subscribe__input {
   width: 358px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -606,11 +602,11 @@ img {
   fill: #ffffff;
 }
 
-.subscribe-wrap-up {
+.subscribe__label-wrap {
   margin-bottom: 20px;
 }
 
-.subscribe-wrap {
+.subscribe__input-wrap {
   display: flex;
   width: 100%;
 }
@@ -620,18 +616,32 @@ img {
   padding-bottom: 94px;
 }
 
-.filter-item:not(:last-child) {
+.gallery-filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-list {
+.gallery-filter__list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
 
 /* -----------Галерея----------------- */
-.filter-title {
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.gallery__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.gallery__box-title {
   color: var(--title-color-text);
   font-weight: 700;
   font-size: 18px;
@@ -640,7 +650,7 @@ img {
   margin-bottom: 4px;
 }
 
-.filter-text {
+.gallery__box-text {
   color: var(--primery-color-text);
   font-style: 400;
   font-size: 16px;
@@ -648,26 +658,19 @@ img {
   letter-spacing: 0.03em;
 }
 
-.gallery-text {
+.gallery__box {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.gallery-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  background: #ffffff;
-  flex-basis: calc((100% - 90px) / 3);
-}
-
-.gallery-list-wrap {
+.gallery__link-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.gallery-item:hover .gallery-hover-text {
+.gallery__item:hover .gallery-hover-text {
   transform: translateY(0);
 }
 
@@ -687,21 +690,13 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-link {
+.gallery__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-link:hover,
-.gallery-link:focus {
+.gallery__link:hover, .gallery__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .backdrop {
